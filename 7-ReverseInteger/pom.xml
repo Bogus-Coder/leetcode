@@ -5,6 +5,7 @@
 	<artifactId>7-ReverseInteger</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
+	<name>ReverseInteger</name>
 
 	<parent>
 		<groupId>ru.tarandus.leetcode</groupId>

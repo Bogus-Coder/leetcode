@@ -5,6 +5,7 @@
 	<artifactId>3-LongestSubstringWithoutRepeatingCharacters</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
+	<name>LongestSubstringWithoutRepeatingCharacters</name>
 
 	<parent>
 		<groupId>ru.tarandus.leetcode</groupId>
