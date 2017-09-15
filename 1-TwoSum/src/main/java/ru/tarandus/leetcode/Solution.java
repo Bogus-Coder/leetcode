@@ -1,10 +1,5 @@
 package ru.tarandus.leetcode;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.print.attribute.HashAttributeSet;
-
 public class Solution {
 
 	/**
