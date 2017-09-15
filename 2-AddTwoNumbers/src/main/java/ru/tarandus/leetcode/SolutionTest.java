@@ -7,7 +7,7 @@ import org.junit.Test;
 public class SolutionTest {
 
 	@Test
-	public void testTwoSum() {
+	public void testAddTwoNumbers() {
 		Solution s = new Solution();
 		ListNode node = new ListNode(2);
 		node.next = new ListNode(4);
