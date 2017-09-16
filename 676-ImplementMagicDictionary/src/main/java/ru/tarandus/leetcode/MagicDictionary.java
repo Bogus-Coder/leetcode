@@ -1,9 +1,6 @@
 package ru.tarandus.leetcode;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -72,19 +69,15 @@ class MagicDictionary {
 
 		Set<Entry<String, Integer>> entries = dictonary.entrySet();
 
-		for (Iterator<Entry<String, Integer>> iterator = entries.iterator(); iterator.hasNext();) {
-			Entry<String, Integer> entry = iterator.next();
+		for (Entry<String, Integer> entry : entries) {
 			// select all words of the correct length
 			if (entry.getValue() == wordLength) {
-				List<Integer> diff = new ArrayList<>(32);
-				for (int i = 0; i < wordLength; i++) {
-					diff.add((entry.getKey().charAt(i) - word.charAt(i)) != 0 ? 1 : 0);
-				}
 				int counter = 0;
-				for (int c : diff) {
-					counter += c;
+				for (int i = 0; i < wordLength; i++) {
+					counter += (entry.getKey().charAt(i) - word.charAt(i)) != 0 ? 1 : 0;
 				}
-				if (counter == 1) {
+                
+                if (counter == 1) {
 					return true;
 				}
 			}
