@@ -24,6 +24,7 @@
 		<module>190-ReverseBits</module>
 		<module>167-TwoSum2InputArrayIsSorted</module>
 		<module>650-2KeysKeyboard</module>
+		<module>676-ImplementMagicDictionary</module>
 	</modules>
 
 	<dependencies>
