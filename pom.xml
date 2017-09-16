@@ -21,6 +21,9 @@
 		<module>5-LongestPalindromicSubstring</module>
 		<module>7-ReverseInteger</module>
 		<module>8-StringToInteger_atoi</module>
+		<module>190-ReverseBits</module>
+		<module>167-TwoSum2InputArrayIsSorted</module>
+		<module>650-2KeysKeyboard</module>
 	</modules>
 
 	<dependencies>
