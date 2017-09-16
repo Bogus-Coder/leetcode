@@ -7,7 +7,7 @@ import org.junit.Test;
 public class SolutionTest {
 
 	@Test
-	public void testReverse() {
+	public void testReverseBits() {
 		Solution s = new Solution();
 
 		assertEquals(0, s.reverseBits(0));
