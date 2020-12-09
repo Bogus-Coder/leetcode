@@ -1,19 +1,23 @@
 package ru.tarandus.leetcode;
 
-import static org.junit.Assert.assertEquals;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class SolutionTest {
 	private final Map<String, String> testSuite = new HashMap<>();
 
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception {
 		testSuite.put("cbbd", "bb");
 		testSuite.put("cbbb", "bbb");
@@ -32,7 +36,8 @@ public class SolutionTest {
 
 	}
 
-	@Test(timeout = 200)
+	@Test
+	@Timeout(value = 200, unit = TimeUnit.MILLISECONDS)
 	public void testLongestPalindrome() {
 		Solution s = new Solution();
 		Set<Entry<String, String>> set = testSuite.entrySet();
